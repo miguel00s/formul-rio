@@ -43,6 +43,32 @@
         border-radius: 4px;
         box-sizing: border-box;
     }
+
+    .buttons{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .btn-cadastrar{
+        background-color: #edf2f7;
+        color: #4a5568;
+        border: 1px solid #cbd5e0;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    .btn-limpar{
+        background-color: #edf2f7;
+        color: #4a5568;
+        border: 1px solid #cbd5e0;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    range{
+        color:;
+    }
 </style>
 
 <body>
@@ -109,9 +135,45 @@
                     <td><input type="range" name="satisfacao" min="0" max="100"></td>
                 </tr>
 
-            </table>
-        </form>
+                <tr>
+                    <td class="label-col">Interesses:</td>
+                    <td>
+                        <input type="checkbox" id="futebol"> <label for="futebol">Futebol</label>
+                        <input type="checkbox" id="programacao"> <label for="programacao">Programação</label>
+                        <input type="checkbox" id="games"> <label for="games">Games</label>
+                    </td>
+                 </tr>
 
+                <tr>
+                    <td class="label-col">Sexo:</td>
+                    <td>
+                        <select name="sexo" style="width: 120px;">
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option>Outro</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                   <td class="label-col" style="vertical-align: top;">Observações</td>
+                   <td><textarea name="obs" rows="4"></textarea></td> 
+                </tr>
+
+                <tr>
+                    <td  class="label-col">Foto de perfil</td>
+                    <td><input type="file" name="foto"></td>
+                </tr>
+
+            </table>
+
+            <div class="buttons">
+                <button type="submit" class="btn-cadastrar">Cadastrar</button>
+                <button type="reset" class="btn-limpar">Limpar</button>
+                
+            </div>
+
+        </form>
     </div>
 
 </body>
