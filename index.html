@@ -34,7 +34,15 @@
         text-align: right;
         width: 35%;
     }
-
+    input[type="text"], input[type="email"], input[type="password"],
+    input[type="number"], input[type="tel"], input[type="url"],
+    input[type="date"], input[type="time"], input[type="datetime-local"], select, textarea{
+        width: 100%;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
 </style>
 
 <body>
@@ -59,6 +67,46 @@
                 <tr>
                     <td class="label-col">Senha:</td>
                     <td><input type="password" name="senha"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-col">Idade:</td>
+                    <td><input type="number" name="idade" value="0" style="width: 60px;"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-col">Telefone:</td>
+                    <td><input type="tel" name="telefone"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-col">Site:</td>
+                    <td><input type="url" name="site"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-col">Data de nascimento:</td>
+                    <td><input type="date" name="nascimento"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-col">Hora favorita:</td>
+                    <td><input type="time" name="hora" style="width: 100px;"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-col">Data e hora:</td>
+                    <td><input type="datetime-local" name="data_hora"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-col">Cor favorita:</td>
+                    <td><input type="color" name="cor" style="width: 40px; height: 30; border: none; padding: 0;"></td>
+                </tr>
+
+                <tr>
+                    <td class="label-col">Nível de satisfação</td>
+                    <td><input type="range" name="satisfacao" min="0" max="100"></td>
                 </tr>
 
             </table>
